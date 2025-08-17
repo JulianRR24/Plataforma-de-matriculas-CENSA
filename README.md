@@ -73,7 +73,7 @@ El proyecto está organizado en los siguientes archivos y formularios principale
 
 ## 📸 Capturas de Pantalla
 
-*(Aquí puedes incluir enlaces o imágenes de las diferentes ventanas de la aplicación para mostrar su interfaz visual.)*
+<img width="1918" height="1027" alt="image" src="https://github.com/user-attachments/assets/8a4f597a-9dbf-46ac-83c7-8b5e6eaac8d1" />
 
 ---
 
@@ -87,4 +87,4 @@ Este proyecto se distribuye bajo la **Licencia MIT**. Para más detalles, consul
 
 ## 📧 Contacto
 
-Para consultas o soporte, puedes contactar a [Tu Nombre] en [Tu Correo Electrónico] o a través de [Tu LinkedIn/Sitio Web].
+Para consultas o soporte, puedes contactar a Julian Ramirez en julianramirezreyes23@gmail.com o a través de www.julianramirezreyes.com.
