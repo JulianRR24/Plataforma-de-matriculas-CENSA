@@ -36,7 +36,7 @@ Sigue estos pasos para poner en marcha el proyecto:
 
 1.  **Clonar el repositorio:**
     ```bash
-    git clone [URL_DEL_REPOSITORIO]
+    git clone https://github.com/JulianRR24/Plataforma-de-matriculas-CENSA.git
     ```
 2.  **Abrir la solución:**
     Abre el archivo `proyectoFinal.sln` en **Visual Studio 2022** o una versión posterior.
