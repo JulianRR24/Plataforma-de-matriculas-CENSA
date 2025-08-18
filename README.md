@@ -49,8 +49,8 @@ Sigue estos pasos para poner en marcha el proyecto:
 
 Una vez que la aplicación se esté ejecutando, sigue estos pasos:
 
-1.  **Inicio de Sesión:** Ingresa tus credenciales de administrador en la ventana de inicio de sesión.
-2.  **Navegación:** Utiliza el menú principal para acceder a las diferentes secciones:
+1.  **Inicio de Sesión:** Ingresa tus credenciales de administrador en la ventana de inicio de sesión, usuario cualquiera y la contraseña por defecto es "123"
+3.  **Navegación:** Utiliza el menú principal para acceder a las diferentes secciones:
     -   **Inicio:** Vista principal con información general.
     -   **Carreras:** Consulta de programas académicos.
     -   **Matrículas:** Gestión de estudiantes.
