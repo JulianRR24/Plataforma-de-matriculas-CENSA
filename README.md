@@ -75,6 +75,12 @@ El proyecto está organizado en los siguientes archivos y formularios principale
 
 <img width="1918" height="1027" alt="image" src="https://github.com/user-attachments/assets/8a4f597a-9dbf-46ac-83c7-8b5e6eaac8d1" />
 
+<img width="1919" height="1031" alt="image" src="https://github.com/user-attachments/assets/428a4635-7ce3-4d93-953e-1621e57d5fea" />
+
+<img width="1918" height="1027" alt="image" src="https://github.com/user-attachments/assets/43444302-bd4f-412a-9da7-0ae435330b75" />
+
+<img width="1919" height="1028" alt="image" src="https://github.com/user-attachments/assets/fb77582c-e30f-49d2-aa1d-1c17933a94c1" />
+
 ---
 
 ## 📜 Licencia
