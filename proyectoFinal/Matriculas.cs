@@ -15,8 +15,11 @@ namespace proyectoFinal
         public Matriculas()
         {
             InitializeComponent();
+
+            dataGridViewMatriculas.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+
             this.BackColor = Color.White;
-            
+
             if (this.Controls.Count > 0)
             {
                 foreach (Control control in this.Controls)
@@ -132,8 +135,16 @@ namespace proyectoFinal
                 // Modificamos los valores
                 filaAModificar["Cedula"] = textBoxCedula.Text;
                 filaAModificar["Nombre"] = textBoxNombre.Text;
-                // ... y así con los demás campos
-                
+                filaAModificar["Apellido"] = textBoxApellido.Text;
+                filaAModificar["Direccion"] = textBoxDireccion.Text;
+                filaAModificar["Telefono"] = textBoxTelefono.Text;
+                filaAModificar["Email"] = textBoxEmail.Text;
+                filaAModificar["Sede"] = comboBoxSede.Text;
+                filaAModificar["Programa"] = comboBoxPrograma.Text;
+                filaAModificar["Horario"] = textBoxHorario.Text;
+                filaAModificar["Matricula"] = textBoxMatricula.Text;
+                filaAModificar["Observaciones"] = textBoxObservaciones.Text;
+
                 MessageBox.Show("Registro modificado con éxito");
             }
             else
@@ -150,7 +161,7 @@ namespace proyectoFinal
                 // Obtenemos el índice de la fila seleccionada
                 int indiceFila = dataGridViewMatriculas.SelectedRows[0].Index;
                 DatosMatriculasManager.Instance.DatosMatriculas.Rows.RemoveAt(indiceFila);
-                
+
                 MessageBox.Show("Registro eliminado con éxito");
             }
             else
@@ -178,6 +189,38 @@ namespace proyectoFinal
         private void comboBoxSede_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void dataGridViewMatriculas_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            // Verificar que haya al menos una fila seleccionada
+            if (dataGridViewMatriculas.SelectedRows.Count == 0) return;
+
+            try
+            {
+                // Obtener la primera fila seleccionada
+                DataGridViewRow row = dataGridViewMatriculas.SelectedRows[0];
+                
+                // Actualizar los controles
+                textBoxCedula.Text = row.Cells[0]?.Value?.ToString() ?? "";
+                textBoxNombre.Text = row.Cells[1]?.Value?.ToString() ?? "";
+                textBoxApellido.Text = row.Cells[2]?.Value?.ToString() ?? "";
+                textBoxDireccion.Text = row.Cells[3]?.Value?.ToString() ?? "";
+                textBoxTelefono.Text = row.Cells[4]?.Value?.ToString() ?? "";
+                textBoxEmail.Text = row.Cells[5]?.Value?.ToString() ?? "";
+                comboBoxSede.Text = row.Cells[6]?.Value?.ToString() ?? "";
+                comboBoxPrograma.Text = row.Cells[7]?.Value?.ToString() ?? "";
+                textBoxHorario.Text = row.Cells[8]?.Value?.ToString() ?? "";
+                textBoxMatricula.Text = row.Cells[9]?.Value?.ToString() ?? "";
+                textBoxObservaciones.Text = row.Cells[10]?.Value?.ToString() ?? "";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al cargar los datos: " + ex.Message, 
+                            "Error", 
+                            MessageBoxButtons.OK, 
+                            MessageBoxIcon.Error);
+            }
         }
     }
 }

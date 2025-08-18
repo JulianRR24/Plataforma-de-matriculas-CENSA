@@ -351,6 +351,7 @@
             dataGridViewMatriculas.Name = "dataGridViewMatriculas";
             dataGridViewMatriculas.Size = new Size(1487, 506);
             dataGridViewMatriculas.TabIndex = 29;
+            dataGridViewMatriculas.CellContentClick += dataGridViewMatriculas_CellContentClick;
             // 
             // label12
             // 
