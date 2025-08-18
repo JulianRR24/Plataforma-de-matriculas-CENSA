@@ -31,6 +31,7 @@
             label1 = new Label();
             pictureBox1 = new PictureBox();
             dataGridViewBaseDatos = new DataGridView();
+            buttonExportarDatos = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridViewBaseDatos).BeginInit();
             SuspendLayout();
@@ -66,11 +67,24 @@
             dataGridViewBaseDatos.TabIndex = 30;
             dataGridViewBaseDatos.CellContentClick += dataGridViewBaseDatos_CellContentClick;
             // 
+            // buttonExportarDatos
+            // 
+            buttonExportarDatos.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            buttonExportarDatos.ForeColor = Color.Green;
+            buttonExportarDatos.Location = new Point(560, 898);
+            buttonExportarDatos.Name = "buttonExportarDatos";
+            buttonExportarDatos.Size = new Size(817, 48);
+            buttonExportarDatos.TabIndex = 31;
+            buttonExportarDatos.Text = "Exporta los datos";
+            buttonExportarDatos.UseVisualStyleBackColor = true;
+            buttonExportarDatos.Click += buttonExportarDatos_Click;
+            // 
             // BaseDatos
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1904, 981);
+            Controls.Add(buttonExportarDatos);
             Controls.Add(dataGridViewBaseDatos);
             Controls.Add(pictureBox1);
             Controls.Add(label1);
@@ -87,5 +101,6 @@
         private Label label1;
         private PictureBox pictureBox1;
         private DataGridView dataGridViewBaseDatos;
+        private Button buttonExportarDatos;
     }
 }

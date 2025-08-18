@@ -200,7 +200,7 @@ namespace proyectoFinal
             {
                 // Obtener la primera fila seleccionada
                 DataGridViewRow row = dataGridViewMatriculas.SelectedRows[0];
-                
+
                 // Actualizar los controles
                 textBoxCedula.Text = row.Cells[0]?.Value?.ToString() ?? "";
                 textBoxNombre.Text = row.Cells[1]?.Value?.ToString() ?? "";
@@ -216,9 +216,9 @@ namespace proyectoFinal
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error al cargar los datos: " + ex.Message, 
-                            "Error", 
-                            MessageBoxButtons.OK, 
+                MessageBox.Show("Error al cargar los datos: " + ex.Message,
+                            "Error",
+                            MessageBoxButtons.OK,
                             MessageBoxIcon.Error);
             }
         }

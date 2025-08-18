@@ -197,7 +197,7 @@
             // 
             // textBoxDireccion
             // 
-            textBoxDireccion.Location = new Point(621, 217);
+            textBoxDireccion.Location = new Point(585, 217);
             textBoxDireccion.Name = "textBoxDireccion";
             textBoxDireccion.Size = new Size(183, 23);
             textBoxDireccion.TabIndex = 14;
@@ -207,7 +207,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.Location = new Point(510, 210);
+            label4.Location = new Point(474, 210);
             label4.Name = "label4";
             label4.Size = new Size(105, 30);
             label4.TabIndex = 13;
@@ -253,7 +253,7 @@
             // 
             comboBoxSede.FormattingEnabled = true;
             comboBoxSede.Items.AddRange(new object[] { "Andes", "Apartadó", "Barbosa", "Bello", "Bogotá", "Caldas Antioquia", "Cañasgordas", "Cartago", "Caucasia", "Chinchiná", "Concordia", "Frontino", "Itagüí", "La Dorada", "Manizales", "Medellín", "Montería", "Puerto Triunfo", "Rionegro", "Santa Fé De Antioquia", "Segovia", "Támesis", "Yarumal" });
-            comboBoxSede.Location = new Point(934, 216);
+            comboBoxSede.Location = new Point(878, 216);
             comboBoxSede.Name = "comboBoxSede";
             comboBoxSede.Size = new Size(183, 23);
             comboBoxSede.TabIndex = 19;
@@ -263,7 +263,7 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label7.Location = new Point(868, 210);
+            label7.Location = new Point(812, 210);
             label7.Name = "label7";
             label7.Size = new Size(60, 30);
             label7.TabIndex = 20;
@@ -273,7 +273,7 @@
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label8.Location = new Point(1167, 210);
+            label8.Location = new Point(1093, 210);
             label8.Name = "label8";
             label8.Size = new Size(109, 30);
             label8.TabIndex = 22;
@@ -283,9 +283,9 @@
             // 
             comboBoxPrograma.FormattingEnabled = true;
             comboBoxPrograma.Items.AddRange(new object[] { "Tecnico Laboral en Asistente de Mercadeo", "Tecnico Laboral en Asistente en Logistica en Centros de Distribucion", "Tecnico Laboral en Asesor de Call Center y Servicio al Cliente", "Tecnico Laboral en Agente Turistico", "Tecnico Laboral en Auxiliar en enfermeria", "Tecnico Laboral en Auxiliar en Salud Oral", "Tecnico Laboral en Auxiliar en Servicios Farmaceuticos", "Tecnico Laboral en Auxiliar en Salud Publica", "Tecnico Laboral en Auxiliar Administrativo en Salud", "Tecnico Laboral en Atencion Integral al Adulto Mayor", "Tecnico Laboral en Auxiliar en Tanatopraxia", "Tecnico Laboral en Procedimientos Administrativos", "Tecnico Laboral en Procedimientos Contables", "Tecnico Laboral en Auxiliar de Recursos Humanos", "Tecnico Laboral en Auxiliar de Costos y Presupuestos", "Tecnico Laboral en Auxiliar en Secretariado Gerencial", "Tecnico Laboral en Secretariado Contable y Financiero", "Tecnico Laboral en Secretariado Bilingue Nivel B1", "Tecnico Laboral en Auxiliar de Archivo", "Tecnico Laboral en Auxiliar de Banca y Finanzas", "Tecnico Laboral en Auxiliar de Comercio Exterior", "Tecnico Laboral en Asistente Legal y Juridico", "Tecnico Laboral en Auxiliar Administrativo en Documentacion Catastral", "Tecnico Laboral en Auxiliar en Diseno Grafico Digital", "Tecnico Laboral en Ensamble y Mantenimiento de Equipos de Computo", "Tecnico Laboral en Asistente en Analisis y Desarrollo de Software", "Tecnico Laboral en Asistente en Electronica Digital y Telecomunicaciones", "Tecnico Laboral en Instalador de Redes y Telecomunicaciones", "Tecnico Laboral en Auxiliar de Desarrollo Web", "Tecnico Laboral en Auxiliar de Desarrollo de Aplicaciones Moviles", "Programa de Ingles", "Curso de Ingles A1", "Curso de Ingles A2", "Curso de Ingles B1", "Curso de Ingles B2", "Curso de Ingles C1", "Cursos Frances hasta Nivel B2", "Tecnico Laboral en Atencion Integral a la Primera Infancia", "Tecnico Laboral como Instructor en Entrenamiento Deportivo y Recreacion", "Tecnico Laboral en Asesoria de Imagen", "Tecnico Laboral en Barberia", "Tecnico Laboral en Cuidado Estetico de Manos y Pies", "Tecnico Laboral en auxiliar de Personal y Riesgo Laboral", "Tecnico Laboral en Auxiliar de Clinica Veterinaria", "Tecnico Laboral en Asistente en Mecanica de Motos", "Tecnico Laboral en Auxiliar de Cocina", "Tecnico Laboral en Auxiliar de Panaderia y Pasteleria", "Tecnico Laboral en Operador de Eventos", "Tecnico Laboral en Bartender" });
-            comboBoxPrograma.Location = new Point(1282, 216);
+            comboBoxPrograma.Location = new Point(1208, 216);
             comboBoxPrograma.Name = "comboBoxPrograma";
-            comboBoxPrograma.Size = new Size(369, 23);
+            comboBoxPrograma.Size = new Size(443, 23);
             comboBoxPrograma.TabIndex = 21;
             comboBoxPrograma.SelectedIndexChanged += comboBoxPrograma_SelectedIndexChanged;
             // 
