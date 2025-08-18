@@ -61,7 +61,8 @@ namespace proyectoFinal
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 30F, FontStyle.Bold);
-            label1.Location = new Point(331, 21);
+            label1.ForeColor = Color.Green;
+            label1.Location = new Point(330, 22);
             label1.Name = "label1";
             label1.Size = new Size(180, 54);
             label1.TabIndex = 4;

@@ -27,5 +27,22 @@ namespace proyectoFinal
                 }
             }
         }
+
+        private void buttonCerrar_Click(object sender, EventArgs e)
+        {
+            // Obtener el formulario principal y mostrar la página principal
+            if (this.ParentForm is Form1 formPrincipal)
+            {
+                formPrincipal.MostrarContenidoPrincipal();
+            }
+
+            // Cerrar el formulario actual
+            this.Close();
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

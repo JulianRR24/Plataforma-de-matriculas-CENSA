@@ -162,7 +162,7 @@ namespace proyectoFinal
         {
             if (!string.IsNullOrEmpty(NombreUsuario))
             {
-                MessageBox.Show($"Usuario actual: {NombreUsuario}", "Información de Usuario", 
+                MessageBox.Show($"Usuario actual: {NombreUsuario}", "Información de Usuario",
                               MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
