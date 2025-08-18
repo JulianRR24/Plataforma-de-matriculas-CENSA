@@ -30,20 +30,9 @@
         {
             label1 = new Label();
             pictureBox1 = new PictureBox();
-            dataGridView1 = new DataGridView();
-            Cedula = new DataGridViewTextBoxColumn();
-            Nombre = new DataGridViewTextBoxColumn();
-            Apellidos = new DataGridViewTextBoxColumn();
-            Direccion = new DataGridViewTextBoxColumn();
-            Telefono = new DataGridViewTextBoxColumn();
-            Email = new DataGridViewTextBoxColumn();
-            Sede = new DataGridViewTextBoxColumn();
-            Programa = new DataGridViewTextBoxColumn();
-            Horario = new DataGridViewTextBoxColumn();
-            Matricula = new DataGridViewTextBoxColumn();
-            Observaciones = new DataGridViewTextBoxColumn();
+            dataGridViewBaseDatos = new DataGridView();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewBaseDatos).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -67,83 +56,28 @@
             pictureBox1.TabIndex = 3;
             pictureBox1.TabStop = false;
             // 
-            // dataGridView1
+            // dataGridViewBaseDatos
             // 
-            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Cedula, Nombre, Apellidos, Direccion, Telefono, Email, Sede, Programa, Horario, Matricula, Observaciones });
-            dataGridView1.Location = new Point(22, 151);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(1848, 709);
-            dataGridView1.TabIndex = 30;
-            // 
-            // Cedula
-            // 
-            Cedula.HeaderText = "Cedula";
-            Cedula.Name = "Cedula";
-            // 
-            // Nombre
-            // 
-            Nombre.HeaderText = "Nombre";
-            Nombre.Name = "Nombre";
-            // 
-            // Apellidos
-            // 
-            Apellidos.HeaderText = "Apellidos";
-            Apellidos.Name = "Apellidos";
-            // 
-            // Direccion
-            // 
-            Direccion.HeaderText = "Direccion";
-            Direccion.Name = "Direccion";
-            // 
-            // Telefono
-            // 
-            Telefono.HeaderText = "Telefono";
-            Telefono.Name = "Telefono";
-            // 
-            // Email
-            // 
-            Email.HeaderText = "Email";
-            Email.Name = "Email";
-            // 
-            // Sede
-            // 
-            Sede.HeaderText = "Sede";
-            Sede.Name = "Sede";
-            // 
-            // Programa
-            // 
-            Programa.HeaderText = "Programa";
-            Programa.Name = "Programa";
-            // 
-            // Horario
-            // 
-            Horario.HeaderText = "Horario";
-            Horario.Name = "Horario";
-            // 
-            // Matricula
-            // 
-            Matricula.HeaderText = "Matricula";
-            Matricula.Name = "Matricula";
-            // 
-            // Observaciones
-            // 
-            Observaciones.HeaderText = "Observaciones";
-            Observaciones.Name = "Observaciones";
+            dataGridViewBaseDatos.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewBaseDatos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewBaseDatos.Location = new Point(22, 151);
+            dataGridViewBaseDatos.Name = "dataGridViewBaseDatos";
+            dataGridViewBaseDatos.Size = new Size(1848, 709);
+            dataGridViewBaseDatos.TabIndex = 30;
+            dataGridViewBaseDatos.CellContentClick += dataGridViewBaseDatos_CellContentClick;
             // 
             // BaseDatos
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1904, 981);
-            Controls.Add(dataGridView1);
+            Controls.Add(dataGridViewBaseDatos);
             Controls.Add(pictureBox1);
             Controls.Add(label1);
             Name = "BaseDatos";
             Text = "BaseDatos";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewBaseDatos).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -152,17 +86,6 @@
 
         private Label label1;
         private PictureBox pictureBox1;
-        private DataGridView dataGridView1;
-        private DataGridViewTextBoxColumn Cedula;
-        private DataGridViewTextBoxColumn Nombre;
-        private DataGridViewTextBoxColumn Apellidos;
-        private DataGridViewTextBoxColumn Direccion;
-        private DataGridViewTextBoxColumn Telefono;
-        private DataGridViewTextBoxColumn Email;
-        private DataGridViewTextBoxColumn Sede;
-        private DataGridViewTextBoxColumn Programa;
-        private DataGridViewTextBoxColumn Horario;
-        private DataGridViewTextBoxColumn Matricula;
-        private DataGridViewTextBoxColumn Observaciones;
+        private DataGridView dataGridViewBaseDatos;
     }
 }

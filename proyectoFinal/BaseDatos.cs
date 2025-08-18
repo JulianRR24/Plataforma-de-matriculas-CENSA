@@ -15,6 +15,9 @@ namespace proyectoFinal
         public BaseDatos()
         {
             InitializeComponent();
+            // Enlaza el DataGridView al mismo DataTable centralizado
+            dataGridViewBaseDatos.DataSource = DatosMatriculasManager.Instance.DatosMatriculas;
+
             this.BackColor = Color.White;
             if (this.Controls.Count > 0)
             {
@@ -26,6 +29,11 @@ namespace proyectoFinal
                     }
                 }
             }
+        }
+
+        private void dataGridViewBaseDatos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

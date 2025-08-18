@@ -36,43 +36,32 @@
             pictureBox1 = new PictureBox();
             buttonCerrar = new Button();
             label1 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
+            textBoxCedula = new TextBox();
+            textBoxNombre = new TextBox();
             label2 = new Label();
-            textBox3 = new TextBox();
+            textBoxApellido = new TextBox();
             label3 = new Label();
-            textBox4 = new TextBox();
+            textBoxDireccion = new TextBox();
             label4 = new Label();
-            textBox5 = new TextBox();
+            textBoxTelefono = new TextBox();
             label5 = new Label();
-            textBox6 = new TextBox();
+            textBoxEmail = new TextBox();
             label6 = new Label();
-            comboBox1 = new ComboBox();
+            comboBoxSede = new ComboBox();
             label7 = new Label();
             label8 = new Label();
-            comboBox2 = new ComboBox();
-            textBox7 = new TextBox();
+            comboBoxPrograma = new ComboBox();
+            textBoxHorario = new TextBox();
             label9 = new Label();
-            textBox8 = new TextBox();
+            textBoxMatricula = new TextBox();
             label10 = new Label();
-            textBox9 = new TextBox();
+            textBoxObservaciones = new TextBox();
             label11 = new Label();
-            dataGridView1 = new DataGridView();
-            Cedula = new DataGridViewTextBoxColumn();
-            Nombre = new DataGridViewTextBoxColumn();
-            Apellidos = new DataGridViewTextBoxColumn();
-            Direccion = new DataGridViewTextBoxColumn();
-            Telefono = new DataGridViewTextBoxColumn();
-            Email = new DataGridViewTextBoxColumn();
-            Sede = new DataGridViewTextBoxColumn();
-            Programa = new DataGridViewTextBoxColumn();
-            Horario = new DataGridViewTextBoxColumn();
-            Matricula = new DataGridViewTextBoxColumn();
-            Observaciones = new DataGridViewTextBoxColumn();
+            dataGridViewMatriculas = new DataGridView();
             label12 = new Label();
             groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewMatriculas).BeginInit();
             SuspendLayout();
             // 
             // groupBox1
@@ -98,6 +87,7 @@
             buttonLimpiar.TabIndex = 3;
             buttonLimpiar.Text = "Limpiar";
             buttonLimpiar.UseVisualStyleBackColor = true;
+            buttonLimpiar.Click += buttonLimpiar_Click;
             // 
             // buttonBorrar
             // 
@@ -107,6 +97,7 @@
             buttonBorrar.TabIndex = 2;
             buttonBorrar.Text = "Borrar";
             buttonBorrar.UseVisualStyleBackColor = true;
+            buttonBorrar.Click += buttonBorrar_Click;
             // 
             // buttonModificar
             // 
@@ -116,6 +107,7 @@
             buttonModificar.TabIndex = 1;
             buttonModificar.Text = "Modificar";
             buttonModificar.UseVisualStyleBackColor = true;
+            buttonModificar.Click += buttonModificar_Click;
             // 
             // buttonRegistrar
             // 
@@ -125,6 +117,7 @@
             buttonRegistrar.TabIndex = 0;
             buttonRegistrar.Text = "Registrar";
             buttonRegistrar.UseVisualStyleBackColor = true;
+            buttonRegistrar.Click += buttonRegistrar_Click;
             // 
             // pictureBox1
             // 
@@ -158,19 +151,21 @@
             label1.TabIndex = 7;
             label1.Text = "Cedula";
             // 
-            // textBox1
+            // textBoxCedula
             // 
-            textBox1.Location = new Point(258, 134);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(183, 23);
-            textBox1.TabIndex = 8;
+            textBoxCedula.Location = new Point(258, 134);
+            textBoxCedula.Name = "textBoxCedula";
+            textBoxCedula.Size = new Size(183, 23);
+            textBoxCedula.TabIndex = 8;
+            textBoxCedula.TextChanged += textBoxCedula_TextChanged;
             // 
-            // textBox2
+            // textBoxNombre
             // 
-            textBox2.Location = new Point(678, 134);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(183, 23);
-            textBox2.TabIndex = 10;
+            textBoxNombre.Location = new Point(678, 134);
+            textBoxNombre.Name = "textBoxNombre";
+            textBoxNombre.Size = new Size(183, 23);
+            textBoxNombre.TabIndex = 10;
+            textBoxNombre.TextChanged += textBoxNombre_TextChanged;
             // 
             // label2
             // 
@@ -182,12 +177,13 @@
             label2.TabIndex = 9;
             label2.Text = "Nombre";
             // 
-            // textBox3
+            // textBoxApellido
             // 
-            textBox3.Location = new Point(1093, 136);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(183, 23);
-            textBox3.TabIndex = 12;
+            textBoxApellido.Location = new Point(1093, 136);
+            textBoxApellido.Name = "textBoxApellido";
+            textBoxApellido.Size = new Size(183, 23);
+            textBoxApellido.TabIndex = 12;
+            textBoxApellido.TextChanged += textBoxApellido_TextChanged;
             // 
             // label3
             // 
@@ -199,29 +195,31 @@
             label3.TabIndex = 11;
             label3.Text = "Apellido";
             // 
-            // textBox4
+            // textBoxDireccion
             // 
-            textBox4.Location = new Point(678, 224);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(183, 23);
-            textBox4.TabIndex = 14;
+            textBoxDireccion.Location = new Point(621, 217);
+            textBoxDireccion.Name = "textBoxDireccion";
+            textBoxDireccion.Size = new Size(183, 23);
+            textBoxDireccion.TabIndex = 14;
+            textBoxDireccion.TextChanged += textBoxDireccion_TextChanged;
             // 
             // label4
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.Location = new Point(567, 217);
+            label4.Location = new Point(510, 210);
             label4.Name = "label4";
             label4.Size = new Size(105, 30);
             label4.TabIndex = 13;
             label4.Text = "Dirección";
             // 
-            // textBox5
+            // textBoxTelefono
             // 
-            textBox5.Location = new Point(1468, 136);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(183, 23);
-            textBox5.TabIndex = 16;
+            textBoxTelefono.Location = new Point(1468, 136);
+            textBoxTelefono.Name = "textBoxTelefono";
+            textBoxTelefono.Size = new Size(183, 23);
+            textBoxTelefono.TabIndex = 16;
+            textBoxTelefono.TextChanged += textBoxTelefono_TextChanged;
             // 
             // label5
             // 
@@ -233,12 +231,13 @@
             label5.TabIndex = 15;
             label5.Text = "Telefono";
             // 
-            // textBox6
+            // textBoxEmail
             // 
-            textBox6.Location = new Point(258, 217);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(183, 23);
-            textBox6.TabIndex = 18;
+            textBoxEmail.Location = new Point(258, 217);
+            textBoxEmail.Name = "textBoxEmail";
+            textBoxEmail.Size = new Size(183, 23);
+            textBoxEmail.TabIndex = 18;
+            textBoxEmail.TextChanged += textBoxEmail_TextChanged;
             // 
             // label6
             // 
@@ -250,21 +249,21 @@
             label6.TabIndex = 17;
             label6.Text = "E-mail";
             // 
-            // comboBox1
+            // comboBoxSede
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "Andes", "Apartadó", "Barbosa", "Bello", "Bogotá", "Caldas Antioquia", "Cañasgordas", "Cartago", "Caucasia", "Chinchiná", "Concordia", "Frontino", "Itagüí", "La Dorada", "Manizales", "Medellín", "Montería", "Puerto Triunfo", "Rionegro", "Santa Fé De Antioquia", "Segovia", "Támesis", "Yarumal" });
-            comboBox1.Location = new Point(1093, 223);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(183, 23);
-            comboBox1.TabIndex = 19;
-            comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
+            comboBoxSede.FormattingEnabled = true;
+            comboBoxSede.Items.AddRange(new object[] { "Andes", "Apartadó", "Barbosa", "Bello", "Bogotá", "Caldas Antioquia", "Cañasgordas", "Cartago", "Caucasia", "Chinchiná", "Concordia", "Frontino", "Itagüí", "La Dorada", "Manizales", "Medellín", "Montería", "Puerto Triunfo", "Rionegro", "Santa Fé De Antioquia", "Segovia", "Támesis", "Yarumal" });
+            comboBoxSede.Location = new Point(934, 216);
+            comboBoxSede.Name = "comboBoxSede";
+            comboBoxSede.Size = new Size(183, 23);
+            comboBoxSede.TabIndex = 19;
+            comboBoxSede.SelectedIndexChanged += comboBoxSede_SelectedIndexChanged;
             // 
             // label7
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label7.Location = new Point(1027, 217);
+            label7.Location = new Point(868, 210);
             label7.Name = "label7";
             label7.Size = new Size(60, 30);
             label7.TabIndex = 20;
@@ -274,27 +273,29 @@
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label8.Location = new Point(1353, 217);
+            label8.Location = new Point(1167, 210);
             label8.Name = "label8";
             label8.Size = new Size(109, 30);
             label8.TabIndex = 22;
             label8.Text = "Programa";
             // 
-            // comboBox2
+            // comboBoxPrograma
             // 
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Items.AddRange(new object[] { "Tecnico Laboral en Asistente de Mercadeo", "Tecnico Laboral en Asistente en Logistica en Centros de Distribucion", "Tecnico Laboral en Asesor de Call Center y Servicio al Cliente", "Tecnico Laboral en Agente Turistico", "Tecnico Laboral en Auxiliar en enfermeria", "Tecnico Laboral en Auxiliar en Salud Oral", "Tecnico Laboral en Auxiliar en Servicios Farmaceuticos", "Tecnico Laboral en Auxiliar en Salud Publica", "Tecnico Laboral en Auxiliar Administrativo en Salud", "Tecnico Laboral en Atencion Integral al Adulto Mayor", "Tecnico Laboral en Auxiliar en Tanatopraxia", "Tecnico Laboral en Procedimientos Administrativos", "Tecnico Laboral en Procedimientos Contables", "Tecnico Laboral en Auxiliar de Recursos Humanos", "Tecnico Laboral en Auxiliar de Costos y Presupuestos", "Tecnico Laboral en Auxiliar en Secretariado Gerencial", "Tecnico Laboral en Secretariado Contable y Financiero", "Tecnico Laboral en Secretariado Bilingue Nivel B1", "Tecnico Laboral en Auxiliar de Archivo", "Tecnico Laboral en Auxiliar de Banca y Finanzas", "Tecnico Laboral en Auxiliar de Comercio Exterior", "Tecnico Laboral en Asistente Legal y Juridico", "Tecnico Laboral en Auxiliar Administrativo en Documentacion Catastral", "Tecnico Laboral en Auxiliar en Diseno Grafico Digital", "Tecnico Laboral en Ensamble y Mantenimiento de Equipos de Computo", "Tecnico Laboral en Asistente en Analisis y Desarrollo de Software", "Tecnico Laboral en Asistente en Electronica Digital y Telecomunicaciones", "Tecnico Laboral en Instalador de Redes y Telecomunicaciones", "Tecnico Laboral en Auxiliar de Desarrollo Web", "Tecnico Laboral en Auxiliar de Desarrollo de Aplicaciones Moviles", "Programa de Ingles", "Curso de Ingles A1", "Curso de Ingles A2", "Curso de Ingles B1", "Curso de Ingles B2", "Curso de Ingles C1", "Cursos Frances hasta Nivel B2", "Tecnico Laboral en Atencion Integral a la Primera Infancia", "Tecnico Laboral como Instructor en Entrenamiento Deportivo y Recreacion", "Tecnico Laboral en Asesoria de Imagen", "Tecnico Laboral en Barberia", "Tecnico Laboral en Cuidado Estetico de Manos y Pies", "Tecnico Laboral en auxiliar de Personal y Riesgo Laboral", "Tecnico Laboral en Auxiliar de Clinica Veterinaria", "Tecnico Laboral en Asistente en Mecanica de Motos", "Tecnico Laboral en Auxiliar de Cocina", "Tecnico Laboral en Auxiliar de Panaderia y Pasteleria", "Tecnico Laboral en Operador de Eventos", "Tecnico Laboral en Bartender" });
-            comboBox2.Location = new Point(1468, 223);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(183, 23);
-            comboBox2.TabIndex = 21;
+            comboBoxPrograma.FormattingEnabled = true;
+            comboBoxPrograma.Items.AddRange(new object[] { "Tecnico Laboral en Asistente de Mercadeo", "Tecnico Laboral en Asistente en Logistica en Centros de Distribucion", "Tecnico Laboral en Asesor de Call Center y Servicio al Cliente", "Tecnico Laboral en Agente Turistico", "Tecnico Laboral en Auxiliar en enfermeria", "Tecnico Laboral en Auxiliar en Salud Oral", "Tecnico Laboral en Auxiliar en Servicios Farmaceuticos", "Tecnico Laboral en Auxiliar en Salud Publica", "Tecnico Laboral en Auxiliar Administrativo en Salud", "Tecnico Laboral en Atencion Integral al Adulto Mayor", "Tecnico Laboral en Auxiliar en Tanatopraxia", "Tecnico Laboral en Procedimientos Administrativos", "Tecnico Laboral en Procedimientos Contables", "Tecnico Laboral en Auxiliar de Recursos Humanos", "Tecnico Laboral en Auxiliar de Costos y Presupuestos", "Tecnico Laboral en Auxiliar en Secretariado Gerencial", "Tecnico Laboral en Secretariado Contable y Financiero", "Tecnico Laboral en Secretariado Bilingue Nivel B1", "Tecnico Laboral en Auxiliar de Archivo", "Tecnico Laboral en Auxiliar de Banca y Finanzas", "Tecnico Laboral en Auxiliar de Comercio Exterior", "Tecnico Laboral en Asistente Legal y Juridico", "Tecnico Laboral en Auxiliar Administrativo en Documentacion Catastral", "Tecnico Laboral en Auxiliar en Diseno Grafico Digital", "Tecnico Laboral en Ensamble y Mantenimiento de Equipos de Computo", "Tecnico Laboral en Asistente en Analisis y Desarrollo de Software", "Tecnico Laboral en Asistente en Electronica Digital y Telecomunicaciones", "Tecnico Laboral en Instalador de Redes y Telecomunicaciones", "Tecnico Laboral en Auxiliar de Desarrollo Web", "Tecnico Laboral en Auxiliar de Desarrollo de Aplicaciones Moviles", "Programa de Ingles", "Curso de Ingles A1", "Curso de Ingles A2", "Curso de Ingles B1", "Curso de Ingles B2", "Curso de Ingles C1", "Cursos Frances hasta Nivel B2", "Tecnico Laboral en Atencion Integral a la Primera Infancia", "Tecnico Laboral como Instructor en Entrenamiento Deportivo y Recreacion", "Tecnico Laboral en Asesoria de Imagen", "Tecnico Laboral en Barberia", "Tecnico Laboral en Cuidado Estetico de Manos y Pies", "Tecnico Laboral en auxiliar de Personal y Riesgo Laboral", "Tecnico Laboral en Auxiliar de Clinica Veterinaria", "Tecnico Laboral en Asistente en Mecanica de Motos", "Tecnico Laboral en Auxiliar de Cocina", "Tecnico Laboral en Auxiliar de Panaderia y Pasteleria", "Tecnico Laboral en Operador de Eventos", "Tecnico Laboral en Bartender" });
+            comboBoxPrograma.Location = new Point(1282, 216);
+            comboBoxPrograma.Name = "comboBoxPrograma";
+            comboBoxPrograma.Size = new Size(369, 23);
+            comboBoxPrograma.TabIndex = 21;
+            comboBoxPrograma.SelectedIndexChanged += comboBoxPrograma_SelectedIndexChanged;
             // 
-            // textBox7
+            // textBoxHorario
             // 
-            textBox7.Location = new Point(258, 298);
-            textBox7.Name = "textBox7";
-            textBox7.Size = new Size(183, 23);
-            textBox7.TabIndex = 24;
+            textBoxHorario.Location = new Point(258, 298);
+            textBoxHorario.Name = "textBoxHorario";
+            textBoxHorario.Size = new Size(183, 23);
+            textBoxHorario.TabIndex = 24;
+            textBoxHorario.TextChanged += textBoxHorario_TextChanged;
             // 
             // label9
             // 
@@ -306,12 +307,13 @@
             label9.TabIndex = 23;
             label9.Text = "Horario";
             // 
-            // textBox8
+            // textBoxMatricula
             // 
-            textBox8.Location = new Point(678, 302);
-            textBox8.Name = "textBox8";
-            textBox8.Size = new Size(183, 23);
-            textBox8.TabIndex = 26;
+            textBoxMatricula.Location = new Point(678, 302);
+            textBoxMatricula.Name = "textBoxMatricula";
+            textBoxMatricula.Size = new Size(183, 23);
+            textBoxMatricula.TabIndex = 26;
+            textBoxMatricula.TextChanged += textBoxMatricula_TextChanged;
             // 
             // label10
             // 
@@ -323,12 +325,13 @@
             label10.TabIndex = 25;
             label10.Text = "Valor Matricula";
             // 
-            // textBox9
+            // textBoxObservaciones
             // 
-            textBox9.Location = new Point(1093, 302);
-            textBox9.Name = "textBox9";
-            textBox9.Size = new Size(558, 23);
-            textBox9.TabIndex = 28;
+            textBoxObservaciones.Location = new Point(1093, 302);
+            textBoxObservaciones.Name = "textBoxObservaciones";
+            textBoxObservaciones.Size = new Size(558, 23);
+            textBoxObservaciones.TabIndex = 28;
+            textBoxObservaciones.TextChanged += textBoxObservaciones_TextChanged;
             // 
             // label11
             // 
@@ -340,70 +343,14 @@
             label11.TabIndex = 27;
             label11.Text = "Observaciones";
             // 
-            // dataGridView1
+            // dataGridViewMatriculas
             // 
-            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Cedula, Nombre, Apellidos, Direccion, Telefono, Email, Sede, Programa, Horario, Matricula, Observaciones });
-            dataGridView1.Location = new Point(306, 379);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(1487, 506);
-            dataGridView1.TabIndex = 29;
-            // 
-            // Cedula
-            // 
-            Cedula.HeaderText = "Cedula";
-            Cedula.Name = "Cedula";
-            // 
-            // Nombre
-            // 
-            Nombre.HeaderText = "Nombre";
-            Nombre.Name = "Nombre";
-            // 
-            // Apellidos
-            // 
-            Apellidos.HeaderText = "Apellidos";
-            Apellidos.Name = "Apellidos";
-            // 
-            // Direccion
-            // 
-            Direccion.HeaderText = "Direccion";
-            Direccion.Name = "Direccion";
-            // 
-            // Telefono
-            // 
-            Telefono.HeaderText = "Telefono";
-            Telefono.Name = "Telefono";
-            // 
-            // Email
-            // 
-            Email.HeaderText = "Email";
-            Email.Name = "Email";
-            // 
-            // Sede
-            // 
-            Sede.HeaderText = "Sede";
-            Sede.Name = "Sede";
-            // 
-            // Programa
-            // 
-            Programa.HeaderText = "Programa";
-            Programa.Name = "Programa";
-            // 
-            // Horario
-            // 
-            Horario.HeaderText = "Horario";
-            Horario.Name = "Horario";
-            // 
-            // Matricula
-            // 
-            Matricula.HeaderText = "Matricula";
-            Matricula.Name = "Matricula";
-            // 
-            // Observaciones
-            // 
-            Observaciones.HeaderText = "Observaciones";
-            Observaciones.Name = "Observaciones";
+            dataGridViewMatriculas.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewMatriculas.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewMatriculas.Location = new Point(306, 379);
+            dataGridViewMatriculas.Name = "dataGridViewMatriculas";
+            dataGridViewMatriculas.Size = new Size(1487, 506);
+            dataGridViewMatriculas.TabIndex = 29;
             // 
             // label12
             // 
@@ -422,28 +369,28 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1904, 981);
             Controls.Add(label12);
-            Controls.Add(dataGridView1);
-            Controls.Add(textBox9);
+            Controls.Add(dataGridViewMatriculas);
+            Controls.Add(textBoxObservaciones);
             Controls.Add(label11);
-            Controls.Add(textBox8);
+            Controls.Add(textBoxMatricula);
             Controls.Add(label10);
-            Controls.Add(textBox7);
+            Controls.Add(textBoxHorario);
             Controls.Add(label9);
             Controls.Add(label8);
-            Controls.Add(comboBox2);
+            Controls.Add(comboBoxPrograma);
             Controls.Add(label7);
-            Controls.Add(comboBox1);
-            Controls.Add(textBox6);
+            Controls.Add(comboBoxSede);
+            Controls.Add(textBoxEmail);
             Controls.Add(label6);
-            Controls.Add(textBox5);
+            Controls.Add(textBoxTelefono);
             Controls.Add(label5);
-            Controls.Add(textBox4);
+            Controls.Add(textBoxDireccion);
             Controls.Add(label4);
-            Controls.Add(textBox3);
+            Controls.Add(textBoxApellido);
             Controls.Add(label3);
-            Controls.Add(textBox2);
+            Controls.Add(textBoxNombre);
             Controls.Add(label2);
-            Controls.Add(textBox1);
+            Controls.Add(textBoxCedula);
             Controls.Add(label1);
             Controls.Add(buttonCerrar);
             Controls.Add(pictureBox1);
@@ -452,7 +399,7 @@
             Text = "Matriculas";
             groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewMatriculas).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -467,39 +414,28 @@
         private Button buttonModificar;
         private Button buttonCerrar;
         private Label label1;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private TextBox textBoxCedula;
+        private TextBox textBoxNombre;
         private Label label2;
-        private TextBox textBox3;
+        private TextBox textBoxApellido;
         private Label label3;
-        private TextBox textBox4;
+        private TextBox textBoxDireccion;
         private Label label4;
-        private TextBox textBox5;
+        private TextBox textBoxTelefono;
         private Label label5;
-        private TextBox textBox6;
+        private TextBox textBoxEmail;
         private Label label6;
-        private ComboBox comboBox1;
+        private ComboBox comboBoxSede;
         private Label label7;
         private Label label8;
-        private ComboBox comboBox2;
-        private TextBox textBox7;
+        private ComboBox comboBoxPrograma;
+        private TextBox textBoxHorario;
         private Label label9;
-        private TextBox textBox8;
+        private TextBox textBoxMatricula;
         private Label label10;
-        private TextBox textBox9;
+        private TextBox textBoxObservaciones;
         private Label label11;
-        private DataGridView dataGridView1;
-        private DataGridViewTextBoxColumn Cedula;
-        private DataGridViewTextBoxColumn Nombre;
-        private DataGridViewTextBoxColumn Apellidos;
-        private DataGridViewTextBoxColumn Direccion;
-        private DataGridViewTextBoxColumn Telefono;
-        private DataGridViewTextBoxColumn Email;
-        private DataGridViewTextBoxColumn Sede;
-        private DataGridViewTextBoxColumn Programa;
-        private DataGridViewTextBoxColumn Horario;
-        private DataGridViewTextBoxColumn Matricula;
-        private DataGridViewTextBoxColumn Observaciones;
+        private DataGridView dataGridViewMatriculas;
         private Label label12;
     }
 }
